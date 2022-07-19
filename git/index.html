@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git | hs note</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="apple-touch-icon" size="180x180" href="/note/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/note/favicon.svg">
+    <link rel="icon" type="image/png" size="32x32" href="/note/favicon-32x32.png">
+    <link rel="icon" type="image/png" size="16x16" href="/note/favicon-16x16.png">
+    <link rel="manifest" href="/note/site.webmanifest">
+    <link rel="mask-icon" href="/note/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&amp;display=swap" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" type="text/css">
+    <meta name="description" content="note for Front-End development">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    
+    <link rel="preload" href="/note/assets/css/0.styles.d399321d.css" as="style"><link rel="preload" href="/note/assets/js/app.d71de376.js" as="script"><link rel="preload" href="/note/assets/js/2.ec0dc8b0.js" as="script"><link rel="preload" href="/note/assets/js/22.c3033e8d.js" as="script"><link rel="prefetch" href="/note/assets/js/10.939b1fff.js"><link rel="prefetch" href="/note/assets/js/11.a112dcee.js"><link rel="prefetch" href="/note/assets/js/12.084a641d.js"><link rel="prefetch" href="/note/assets/js/13.4a24af88.js"><link rel="prefetch" href="/note/assets/js/14.f2074c65.js"><link rel="prefetch" href="/note/assets/js/15.dec924c0.js"><link rel="prefetch" href="/note/assets/js/16.efc54051.js"><link rel="prefetch" href="/note/assets/js/17.14508825.js"><link rel="prefetch" href="/note/assets/js/18.b507135f.js"><link rel="prefetch" href="/note/assets/js/19.a5b60e80.js"><link rel="prefetch" href="/note/assets/js/20.a63dbf82.js"><link rel="prefetch" href="/note/assets/js/21.4f73ecf9.js"><link rel="prefetch" href="/note/assets/js/23.99d372ad.js"><link rel="prefetch" href="/note/assets/js/24.de309214.js"><link rel="prefetch" href="/note/assets/js/25.de8c8d2f.js"><link rel="prefetch" href="/note/assets/js/26.01354c48.js"><link rel="prefetch" href="/note/assets/js/27.ecd5b103.js"><link rel="prefetch" href="/note/assets/js/28.bb67ef55.js"><link rel="prefetch" href="/note/assets/js/29.2f7900ca.js"><link rel="prefetch" href="/note/assets/js/3.f56a5baa.js"><link rel="prefetch" href="/note/assets/js/30.890a44c8.js"><link rel="prefetch" href="/note/assets/js/31.eea6fa66.js"><link rel="prefetch" href="/note/assets/js/32.79743e16.js"><link rel="prefetch" href="/note/assets/js/33.5ea76855.js"><link rel="prefetch" href="/note/assets/js/34.9903d9f9.js"><link rel="prefetch" href="/note/assets/js/35.9eec6a09.js"><link rel="prefetch" href="/note/assets/js/36.5bda880f.js"><link rel="prefetch" href="/note/assets/js/37.27ab3b9e.js"><link rel="prefetch" href="/note/assets/js/38.eecc486a.js"><link rel="prefetch" href="/note/assets/js/39.1db042a6.js"><link rel="prefetch" href="/note/assets/js/4.ab36384f.js"><link rel="prefetch" href="/note/assets/js/40.550ed746.js"><link rel="prefetch" href="/note/assets/js/41.4d4389fa.js"><link rel="prefetch" href="/note/assets/js/42.d3d37662.js"><link rel="prefetch" href="/note/assets/js/43.358cab6d.js"><link rel="prefetch" href="/note/assets/js/44.c74acfec.js"><link rel="prefetch" href="/note/assets/js/45.0559431b.js"><link rel="prefetch" href="/note/assets/js/46.2933f3c4.js"><link rel="prefetch" href="/note/assets/js/5.0bdf51a3.js"><link rel="prefetch" href="/note/assets/js/6.4983e47a.js"><link rel="prefetch" href="/note/assets/js/7.19723119.js"><link rel="prefetch" href="/note/assets/js/8.e0601ba8.js"><link rel="prefetch" href="/note/assets/js/9.b8b5b8f4.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.d399321d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">hs note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/note/" class="nav-link">
+  🏠 Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="📘 Notes" class="dropdown-title"><span class="title">📘 Notes</span> <span class="arrow down"></span></button> <button type="button" aria-label="📘 Notes" class="mobile-dropdown-title"><span class="title">📘 Notes</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/note/git/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/note/gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-item"><!----> <a href="/note/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/note/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/note/md/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/note/vscode/" class="nav-link">
+  Visual Studio Code
+</a></li><li class="dropdown-item"><!----> <a href="/note/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/note/vuepress/" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/note/ssg/" class="nav-link">
+  SSG
+</a></li><li class="dropdown-item"><!----> <a href="/note/scc/" class="nav-link">
+  Simple Coding Convention
+</a></li></ul></div></div><div class="nav-item"><a href="/note/favorite/" class="nav-link">
+  ⭐ Favorites
+</a></div><div class="nav-item"><a href="/note/about/" class="nav-link">
+  👨 About
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/note/" class="nav-link">
+  🏠 Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="📘 Notes" class="dropdown-title"><span class="title">📘 Notes</span> <span class="arrow down"></span></button> <button type="button" aria-label="📘 Notes" class="mobile-dropdown-title"><span class="title">📘 Notes</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/note/css/" class="nav-link">
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/note/git/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/note/gulp/" class="nav-link">
+  Gulp
+</a></li><li class="dropdown-item"><!----> <a href="/note/html/" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/note/javascript/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/note/md/" class="nav-link">
+  Markdown
+</a></li><li class="dropdown-item"><!----> <a href="/note/vscode/" class="nav-link">
+  Visual Studio Code
+</a></li><li class="dropdown-item"><!----> <a href="/note/vue/" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/note/vuepress/" class="nav-link">
+  VuePress
+</a></li><li class="dropdown-item"><!----> <a href="/note/ssg/" class="nav-link">
+  SSG
+</a></li><li class="dropdown-item"><!----> <a href="/note/scc/" class="nav-link">
+  Simple Coding Convention
+</a></li></ul></div></div><div class="nav-item"><a href="/note/favorite/" class="nav-link">
+  ⭐ Favorites
+</a></div><div class="nav-item"><a href="/note/about/" class="nav-link">
+  👨 About
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Notes</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/css/" class="sidebar-link">CSS</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><a href="/note/git/start/" class="sidebar-heading clickable open"><span>Git</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/git/start.html" class="sidebar-link">Get Started</a></li><li><a href="/note/git/" aria-current="page" class="active sidebar-link">Snippet</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/git/#특정-리비전으로-갔다가-되돌아-오기-checkout" class="sidebar-link">특정 리비전으로 갔다가 되돌아 오기 - checkout</a></li><li class="sidebar-sub-header"><a href="/note/git/#되돌리기-reset-revert" class="sidebar-link">되돌리기 - reset, revert</a></li><li class="sidebar-sub-header"><a href="/note/git/#gitignore" class="sidebar-link">.gitignore</a></li><li class="sidebar-sub-header"><a href="/note/git/#파일-추적-중지-gitignore-변경사항-적용하기" class="sidebar-link">파일 추적 중지, gitignore 변경사항 적용하기</a></li><li class="sidebar-sub-header"><a href="/note/git/#commit-메시지-수정하기" class="sidebar-link">commit 메시지 수정하기</a></li><li class="sidebar-sub-header"><a href="/note/git/#config-설정-확인-삭제" class="sidebar-link">config 설정, 확인, 삭제</a></li><li class="sidebar-sub-header"><a href="/note/git/#pull-을-위한-stash" class="sidebar-link">pull 을 위한 stash</a></li><li class="sidebar-sub-header"><a href="/note/git/#remote-branch-가져오기" class="sidebar-link">remote branch 가져오기</a></li><li class="sidebar-sub-header"><a href="/note/git/#강제-push-하기" class="sidebar-link">강제 push 하기</a></li></ul></li></ul></section></li><li><a href="/note/gulp/" class="sidebar-link">Gulp</a></li><li><a href="/note/html/" class="sidebar-link">HTML</a></li><li><a href="/note/javascript/" class="sidebar-link">JavaScript</a></li><li><a href="/note/md/" class="sidebar-link">Markdown</a></li><li><a href="/note/vscode/" class="sidebar-link">Visual Studio Code</a></li><li><a href="/note/vue/" class="sidebar-link">Vue</a></li><li><a href="/note/vuepress/" class="sidebar-link">VuePress</a></li><li><a href="/note/ssg.html" class="sidebar-link">SSG</a></li><li><a href="/note/scc.html" class="sidebar-link">Simple Coding Convention</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/note/favorite/" class="sidebar-heading clickable"><span>Favorites</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Lyrics</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Poem</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git"><a href="#git" class="header-anchor">#</a> Git</h1> <blockquote><p>버전 관리 시스템</p></blockquote> <h2 id="특정-리비전으로-갔다가-되돌아-오기-checkout"><a href="#특정-리비전으로-갔다가-되돌아-오기-checkout" class="header-anchor">#</a> 특정 리비전으로 갔다가 되돌아 오기 - checkout</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> checkout HEAD~<span class="token punctuation">[</span>Number<span class="token punctuation">]</span>
+<span class="token function">git</span> checkout HEAD~1
+
+<span class="token function">git</span> checkout <span class="token punctuation">[</span>Commit Hash<span class="token punctuation">]</span>
+<span class="token function">git</span> checkout 8553f2
+
+<span class="token function">git</span> checkout master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">reference</p> <ul><li><a href="https://mytory.net/archives/10078" target="_blank" rel="noopener noreferrer">과거로 갔다가 돌아 오기 (특정 리비전으로 갔다가 되돌아 오기)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <hr> <h2 id="되돌리기-reset-revert"><a href="#되돌리기-reset-revert" class="header-anchor">#</a> 되돌리기 - reset, revert</h2> <h3 id="reset"><a href="#reset" class="header-anchor">#</a> reset</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> reset <span class="token punctuation">[</span>option<span class="token punctuation">]</span> <span class="token punctuation">[</span>commit hash<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h4 id="option"><a href="#option" class="header-anchor">#</a> option</h4> <ul><li>hard: 돌아간 커밋의 다음 커밋을 전부 지움</li> <li>soft: 돌아간 커밋의 다음 커밋이 스테이징 상태</li> <li>mixed: 돌아간 커밋의 다음 커밋이 스테이징 전 상태, 옵션의 기본값</li></ul> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> reset --hard a2bbb3c
+<span class="token function">git</span> reset HEAD~3
+
+<span class="token comment"># hard 로 되돌린 커밋을 원격 레포지토리에 push</span>
+<span class="token function">git</span> push oright +master
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="revert"><a href="#revert" class="header-anchor">#</a> revert</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> revert <span class="token punctuation">[</span>commit hash<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ul><li>실제 커밋으로 돌아가지는 않고 생태만 되돌린다. 커밋을 이어 진행한다.</li></ul> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> revert 2664ce3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="차이"><a href="#차이" class="header-anchor">#</a> 차이</h3> <p>실제 커밋으로 돌아가느냐, 그때의 내용(상태)만 가져오느냐 차이도 있지만,
+원격 레포지토리에 push한 상태라면 revert 추천.('force' 라는 무시무시한 옵션이 있긴 함)</p> <h3 id="특정-파일만-되돌리기"><a href="#특정-파일만-되돌리기" class="header-anchor">#</a> 특정 파일만 되돌리기</h3> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> checkout -- src/hello.c
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">reference</p> <ul><li><a href="https://medium.com/nonamedeveloper/%EC%B4%88%EB%B3%B4%EC%9A%A9-git-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0-reset-revert-d572b4cb0bd5" target="_blank" rel="noopener noreferrer">Git 되돌리기<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://www.lesstif.com/gitbook/git-54952660.html" target="_blank" rel="noopener noreferrer">git 수정 이전으로 내용 되돌리기<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <hr> <h2 id="gitignore"><a href="#gitignore" class="header-anchor">#</a> .gitignore</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># gulp, sass, pug and more ...</span>
+node_modules
+dist/*
+*.zip
+
+<span class="token operator">!</span>dist/plugin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ul><li><code>**</code> 이거는 전부, <code>*</code> 이거는 폴더 단위</li> <li>.gitignore 에는 무시할 패턴을 넣고, <code>git add -f</code> 명령어로 무시 목록에 추가하여 사용 가능</li></ul> <hr> <h2 id="파일-추적-중지-gitignore-변경사항-적용하기"><a href="#파일-추적-중지-gitignore-변경사항-적용하기" class="header-anchor">#</a> 파일 추적 중지, gitignore 변경사항 적용하기</h2> <p>우선 파일을 추적하지 않으려면 gitignore 를 사용하면 된다.<br>
+문제는 이미 추적중인 파일을 gitignore 에 추가하거나 할때 일어난다.<br>
+gitignore 추적하지 않을 파일을 등록하고 관련된 파일을 일일이 제외시켜도 되지만,</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> <span class="token function">rm</span> --cached <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>심플하게 전체 추적을 리셋해도 된다.</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> <span class="token function">rm</span> -r --cached <span class="token builtin class-name">.</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">'fixed untracked files'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>하지만 gitignore 를 수정하지 않고, 추적에서 제외하고 싶은 경우도 있다.<br>
+대체로 설정파일을 개인 로컬에서 다르게 적용하고 싶은 경우가 되겠다.</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> update-index --assume-unchanged <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>위 방법을 사용하면 된다.</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> update-index --no-assume-unchanged <span class="token punctuation">[</span>file<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>위 명령어로 추적을 재기할수 있다.<br>
+unchanged 로 지정된 파일은 아래 명령을 이용하면 된다.</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> ls-files -v <span class="token operator">|</span> <span class="token function">grep</span> ^h
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">reference</p> <ul><li><a href="https://c10106.tistory.com/1913" target="_blank" rel="noopener noreferrer">Git에서 파일 추적을 중지하고 파일 변경 사항을 무시하는 방법은 무엇입니까?<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://mrgamza.tistory.com/574" target="_blank" rel="noopener noreferrer">git. 파일 추적 중지, 시작<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <hr> <h2 id="commit-메시지-수정하기"><a href="#commit-메시지-수정하기" class="header-anchor">#</a> commit 메시지 수정하기</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> commit --amend
+
+<span class="token comment"># ex</span>
+<span class="token function">git</span> commit -m <span class="token string">'message'</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit --amend -m <span class="token string">'file add and modify commit message'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>git commit 메시지 수정 후 remote 에 적용</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> rebase -continue
+<span class="token function">git</span> push --force
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><hr> <h2 id="config-설정-확인-삭제"><a href="#config-설정-확인-삭제" class="header-anchor">#</a> config 설정, 확인, 삭제</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># config 확인</span>
+<span class="token function">git</span> config --list
+<span class="token function">git</span> config --global --list
+
+<span class="token comment"># config 설정</span>
+<span class="token function">git</span> config user.name <span class="token string">'홍길동'</span>
+<span class="token function">git</span> config --global user.email <span class="token string">'hgd@email.com'</span>
+
+<span class="token comment"># config 삭제</span>
+<span class="token function">git</span> config --unset user.name
+<span class="token function">git</span> config --unset --global user.email
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">reference</p> <ul><li><a href="https://webisfree.com/2018-07-26/git-config-%EC%84%A4%EC%A0%95-%ED%99%95%EC%9D%B8-%EB%B0%8F-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0" target="_blank" rel="noopener noreferrer">Git Config 설정 확인 및 변경하기 | WEBISFREE<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <hr> <h2 id="pull-을-위한-stash"><a href="#pull-을-위한-stash" class="header-anchor">#</a> pull 을 위한 stash</h2> <p>pull 할때 merge 할때 modified(or add ?) 상태에 있으면 에러를 뛰운다. commit 하거나 stash 하란다.</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># stash</span>
+$ <span class="token function">git</span> stash
+$ <span class="token function">git</span> pull
+$ <span class="token function">git</span> stash pop
+
+<span class="token comment"># 한번에</span>
+$ <span class="token function">git</span> stash <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> pull <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> stash pop
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><code>$ git add .</code> 를 하고 pull 을 해도 에러가 안난다고 하니 확인해볼 필요 있을듯.</p> <div class="custom-block tip"><p class="custom-block-title">reference</p> <ul><li><a href="https://goddaehee.tistory.com/253" target="_blank" rel="noopener noreferrer">git pull 에러 해결 방법<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <hr> <h2 id="remote-branch-가져오기"><a href="#remote-branch-가져오기" class="header-anchor">#</a> remote branch 가져오기</h2> <p>원격 레포지토리에 있는 브런치 확인 및 가져오기</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 원격 브런치 갱신</span>
+<span class="token function">git</span> remote update
+
+<span class="token comment"># 브런치 확인</span>
+<span class="token comment"># 원격</span>
+<span class="token function">git</span> branch -r
+<span class="token comment"># 로컬 및 원격 전부</span>
+<span class="token function">git</span> branch -a
+
+<span class="token comment"># 원격 브런치 가져오기</span>
+<span class="token function">git</span> checkout -t <span class="token punctuation">[</span>브런치 이름<span class="token punctuation">]</span>
+
+<span class="token comment"># 원격 브런치 pull 없이 소스 확인 - 수정(push) 불가</span>
+<span class="token function">git</span> checkout <span class="token punctuation">[</span>원격 브런치 이름<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">reference</p> <ul><li><a href="https://cjh5414.github.io/get-git-remote-branch/" target="_blank" rel="noopener noreferrer">Git remote branch 가져오기<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <hr> <h2 id="강제-push-하기"><a href="#강제-push-하기" class="header-anchor">#</a> 강제 push 하기</h2> <p>로컬과 원격 레포지토리의 히스토리가 다를경우 로컬의 것으로 대체할때</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> push -f
+<span class="token function">git</span> push --force
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2022. 7. 19. 오전 9:37:38</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/note/git/start.html" class="prev">
+        Get Started
+      </a></span> <span class="next"><a href="/note/gulp/">
+        Gulp
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div class="cat-container" data-v-a13867c0><canvas id="vuepress-cat" width="280" height="250" class="live2d" data-v-a13867c0></canvas></div></div></div>
+    <script src="/note/assets/js/app.d71de376.js" defer></script><script src="/note/assets/js/2.ec0dc8b0.js" defer></script><script src="/note/assets/js/22.c3033e8d.js" defer></script>
+  </body>
+</html>
